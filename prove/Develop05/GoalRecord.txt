@@ -1,0 +1,5 @@
+2000
+ChecklistGoal~||~Parts for "Goal Tracker" program#^#Create different classes required for this program#^#100#^#300#^#7#^#7
+SimpleGoal~||~Create the program "Goal Tracker"#^#A program made as a requirement for cse 210 week 05#^#1000#^#True
+EternalGoal~||~Small academic progress#^#Do academic tasks little by little, step by step#^#25
+SimpleGoal~||~Program submission#^#Push the "Goal Tracker"  program to GitHub#^#100#^#False
