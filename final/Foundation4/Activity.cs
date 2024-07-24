@@ -15,9 +15,11 @@ public abstract class Activity
     public abstract double GetPace();
     public string GetSummary()
     {
-        return $@"{_date} {_activity} ({_duration})
-        Distance: {GetDistance().ToString("0.##")} km
-        Speed:{GetSpeed().ToString("0.##")} kph
-        Pace:{GetPace().ToString("0.##")} min per km";
+        string shortString = $"{_date} {_activity} ({_duration} min.)";
+        string distanceString = $"Distance: {GetDistance().ToString("0.##")} km";
+        string speedString = $"Speed: {GetSpeed().ToString("0.##")} kph";
+        string paceString = $"Pace: {GetPace().ToString("0.##")} min per km";
+        string combinedString = $"{shortString}\n{distanceString}\n{speedString}\n{paceString}\n";
+        return combinedString;
     }
 }
