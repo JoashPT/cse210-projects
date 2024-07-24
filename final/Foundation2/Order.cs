@@ -3,10 +3,14 @@ public class Order
     private List<Product> _products = new List<Product>();
     private Customer _customer;
 
-    public Order(List<Product> products, Customer customer)
+    public Order(Customer customer)
     {
-        _products = products;
         _customer = customer;
+    }
+
+    public void AddProducts(Product product)
+    {
+        _products.Add(product);
     }
 
     public double TotalCost()
@@ -39,6 +43,6 @@ public class Order
 
     public void ShippingLabel()
     {
-        Console.WriteLine($"{_customer.GetName()} \n{_customer.GetAddress()}");
+        Console.WriteLine($"\n{_customer.GetName()} \n{_customer.GetAddress()}");
     }
 }
