@@ -20,7 +20,7 @@ public abstract class Event
 
     public void StandardDetails()
     {
-        Console.WriteLine($"{_title}");
+        Console.WriteLine($"\n{_title}");
         Console.WriteLine($"{_description}");
         Console.WriteLine($"Date: {_date} - {_time}");
         Console.WriteLine($"Address: {_address.GetAddress()}");
@@ -31,6 +31,6 @@ public abstract class Event
     public void ShortDescription()
     {
 
-        Console.WriteLine($"{_eventType}: {_title} - {_date}");
+        Console.WriteLine($"\n{_eventType}: {_title} - {_date}");
     }
 }
